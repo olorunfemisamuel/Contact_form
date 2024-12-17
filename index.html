@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+<form action="#" method="post" class="contact-form">  
+
+<h2>Contact Us</h2>
+
+<!---First Name-->
+<div class="form-group">
+  <label for="First Name">First Name<span>*</span></label>
+  <input type="text" id="first-name" name="first-name" required>
+</div>
+
+<!---Last Name-->
+<div class="form-group">
+  <label for="Last Name">Last Name<span>*</span></label>
+  <input type="text" id="last-name" name="last-name" required>
+</div>
+
+<!---Email-->
+<div class="form-group">
+  <label for="Email">Email<span>*</span></label>
+  <input type="text" id="email" name="Email" required>
+</div>
+
+<!---Query Type-->
+<div class="form-group">
+<label>Query Type<span>*</span></label>
+<div class="radio-group">
+  <label>
+    <input type="radio" name="query-type" value="general-enquiry" required>General Enquiry
+  </label>
+  <label>
+    <input type="radio" name="query-type" value="Support">Support Request
+  </label>
+</div>
+</div>
+
+<!---Message---->
+<div class="form-group">
+<label for="Message">Message<span>*</span></label>
+<textarea id="message" name="message" rows="5" required></textarea>
+</div>
+
+<!---Consent-->
+<div class="form-group" id="checkbox-group">
+  <label>
+    <input type="checkbox" name="consent" required>
+    I consent to being contacted by the team <span>*</span>
+  </label>
+</div>
+
+ <!---Submit Button-->
+ <div class="form-group">
+  <button type="Submit" class="submit-btn">Submit</button>
+ </div>
+ 
+
+</div>
+</form>
+
+
+  <!----Message Sent!
+  Thanks for completing the form. We'll be in touch soon!
+---->
+  
+<!---
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+</body>
+</html>

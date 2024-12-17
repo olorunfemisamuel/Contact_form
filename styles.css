@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eafaf0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+/* Form Container */  
+.form-container {
+background-color: #ffffff;
+padding: 20px 30px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+width: 400px;
+}
+
+
+/* Form header */
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+/* Form group */
+.form-group {
+  margin-bottom: 15px;
+  }
+ 
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; 
+}
+
+
+
+.form-group span {
+    color: red;
+  }
+
+
+  /* Input fields */
+input[type="text"],
+input[type="email"],
+textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+    border: 0.1px solid #026c48; /* Green border on hover */
+    outline: none; /* Removes default browser outline */
+    cursor: pointer;
+ 
+}
+
+input[type="text"]:active,
+input[type="email"]:active,
+textarea:active {
+    border: 0.1px solid #026c48; /* Green border on hover */
+    outline: none; /* Removes default browser outline */
+    cursor: pointer;
+}
+
+
+textarea {
+    resize: none;
+  }
+
+  /* Radio buttons */
+.radio-group {
+    display: flex;
+    gap: 10px;
+  }
+
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+  }  
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+  } 
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #028a5e;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } 
+
+  .submit-btn:hover {
+    background-color: #026c48;
+  }
+
+
+/* @media (max-width: 480px) {
+    body {
+      font-size: 0.9em;
+    }
+  } */
+
+  @media (max-width:600px) {
+    body {
+      font-size: 0.9em;
+      float: left; 
+    }
+  }
+  
+  /*Small devices*/
+  @media (min-width:600px) {
+    body {
+      font-size: 0.9em;
+      
+    }
+  }
