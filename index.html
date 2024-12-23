@@ -7,12 +7,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   
-  <title>Frontend Mentor | Contact form</title>
+  <title>Contact form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .error {
+            border-color: red;
+        }
+        .error-message {
+            display: none;
+            color: red;
+        }
   </style>
 </head>
 <body>
@@ -26,18 +33,21 @@
 <div class="form-group">
   <label for="First Name">First Name<span>*</span></label>
   <input type="text" id="first-name" name="first-name" required>
+  <span class="error-message">This field is required.</span>
 </div>
 
 <!---Last Name-->
 <div class="form-group">
   <label for="Last Name">Last Name<span>*</span></label>
   <input type="text" id="last-name" name="last-name" required>
+  <span class="error-message">This field is required.</span>
 </div>
 
 <!---Email-->
 <div class="form-group">
   <label for="Email">Email<span>*</span></label>
   <input type="text" id="email" name="Email" required>
+  <span class="error-message">This field is required.</span>
 </div>
 
 <!---Query Type-->
@@ -57,6 +67,8 @@
 <div class="form-group">
 <label for="Message">Message<span>*</span></label>
 <textarea id="message" name="message" rows="5" required></textarea>
+
+<span class="error-message">This field is required.</span>
 </div>
 
 <!---Consent-->
@@ -70,7 +82,7 @@
  <!---Submit Button-->
  <div class="form-group">
   <button type="Submit" class="submit-btn">Submit</button>
- </div>
+ </div> 
  
 
 </div>
